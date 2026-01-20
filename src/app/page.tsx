@@ -3,6 +3,7 @@ import CategoryList from "@/components/CategoryList"
 import Slider from "@/components/Slider"
 import { Suspense } from "react"
 import Skeleton from "@/components/Skeleton"
+export const dynamic = "force-dynamic";
 
 const HomePage = async() => {
 
@@ -31,4 +32,4 @@ const HomePage = async() => {
   )
 }
 
-export default HomePage
+export default HomePage;
