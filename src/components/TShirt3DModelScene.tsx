@@ -31,7 +31,7 @@ function TShirt(props: React.ComponentProps<"group">) {
 
 export default function TShirt3DModelScene() {
   return (
-    <div className="h-[85dvh]">
+    <div className="h-full w-full">
       <Canvas camera={{ position: [0, 1, 3] }}>
         <OrbitControls />
         <Environment preset="city" />
