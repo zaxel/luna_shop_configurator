@@ -7,9 +7,9 @@ import HeaderIcons from './HeaderIcons';
 
 const Header = () => {
     return (
-        <div className='h-20 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64'>
+        <div className='h-20 px-0 md:px-8 lg:px-16 xl:px-32 2xl:px-64'>
             {/*mobile*/}
-            <div className='h-full flex items-center justify-between relative md:hidden'>
+            <div className='h-full px-4 flex items-center justify-between relative md:hidden relative z-10'>
 
                 <Link href="/">
                     <div className='text-2xl tracking-wide'>LUNA</div>

@@ -26,7 +26,7 @@ const style={
 export default function LevaPanel() { 
   const decalOpen = use3DTShirtStore((s) => s.decalOpen);
 
-  return  <div style={{ position: 'absolute', top: 20, left: 20, width: 300 ,zIndex: 100}}>
+  return  <div style={{ position: 'absolute', top: 85, left: 20, width: 300 ,zIndex: 5}}>
     <Leva hidden={!decalOpen} theme={lightTheme} fill/>
   </div>
 } 
