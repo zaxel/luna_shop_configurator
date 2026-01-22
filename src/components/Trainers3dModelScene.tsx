@@ -34,10 +34,16 @@ function Shoe(props: React.ComponentProps<"group">) {
           setHovered(null);
         }
       }}
-      onPointerDown={(e) => {
-        e.stopPropagation();
-        if (!hovered) return;
-        setCurrent(hovered);
+      // onPointerDown={(e) => {
+      //   e.stopPropagation();
+      //   if (!hovered) return;
+      //   setCurrent(hovered);
+      // }}
+        onClick={(e) => {
+          e.stopPropagation();
+          const key = e.object.userData.meshKey as MeshesType | undefined;
+          if (!key) return;
+         setCurrent(key);
       }}
       onPointerMissed={(e) => {
         setCurrent(null);
