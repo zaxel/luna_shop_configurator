@@ -78,7 +78,15 @@ const Footer = () => {
                 </div>
             </div>
 
-
+            <div className="w-full h-[320px] overflow-hidden rounded-md grayscale-[0.4] contrast-[1.05]  mt-16">
+                <iframe
+                    className="w-full h-full block"
+                    src="https://www.google.com/maps?q=Brooklyn+Bridge+Park%2C+Brooklyn%2C+NY&output=embed"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="main office location map">
+                </iframe>
+            </div>
 
             <div className='flex flex-col md:flex-row items-center justify-between gap-8 mt-16'>
                 <div>© {new Date().getFullYear()} Luna Shop</div>
